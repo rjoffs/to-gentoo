@@ -1,7 +1,7 @@
 # to-gentoo
 
 To run it:
-`bash <(curl -Ss 'https://raw.githubusercontent.com/oglueck/to-gentoo/master/to-gentoo')`
+`bash <(curl -Ss 'https://raw.githubusercontent.com/rjoffs/to-gentoo/master/to-gentoo')`
 
 to-gentoo is a bash script that you can run on any pre-installed Linux distribution. It will replace the current system with a basic Gentoo system. If all goes well you have a fully working Gentoo system when the script finishes without even rebooting.
 
