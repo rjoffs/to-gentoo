@@ -44,7 +44,7 @@ Preconditions:
 How basic is the installed Gentoo system?
 A current Stage-3 system with current Portage repository is installed. So it is quite uptodate and can easily be brought to a fully patched level by running: 
 ```
-emerge -uavD world
+emerge -DuNav @world
 ```
 Where to continue the installation?
 You can simply continue working through the [Gentoo Handbook](https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation#Choosing_the_right_profile) where Portage is configured and a profile is chosen.
