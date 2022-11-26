@@ -207,10 +207,10 @@ emerge --sync
 emerge -v --noreplace net-misc/netifrc net-misc/dhcpcd  app-admin/sudo app-editors/vim
 rc-update add sshd default
 
-echo "adding user to wheel"
+echo "adding user/s to wheel group"
 USERS=`cat /etc/passwd | grep ":$userid:" | awk -F: '{print $1}'`
 for u in ${USERS}; do
-  usermod -a -G wheel $u
+  sed -i "/wheel:*/ s/$/,$u/" /etc/group
 done
 
 echo "allowing users to sudo, fix this later"
