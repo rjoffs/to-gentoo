@@ -35,6 +35,8 @@ To make transition a bit smoother, the following things will be kept / migrated 
 - the hostname
 - DNS config from /etc/resolv.conf
 - timezone
+- install vim, cause I am just used to it. 
+- install sudo, add all users with uid above 999 to wheel group and add sudoers statement allowing users in the wheel group to sudo without typing the password, this is too permissive, fix after confirming successful imgration.
 
 Preconditions:
 - a modern x86\_64 Linux in single-user mode
